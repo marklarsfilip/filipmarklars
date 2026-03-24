@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx sv:*)",
+      "Read(//c/Code/**)",
+      "Bash(mkdir -p _svelte_temp)",
+      "Bash(cp -r /c/Code/_svelte_temp/* /c/Code/filipmarklars/)",
+      "Bash(cp /c/Code/_svelte_temp/.gitignore /c/Code/filipmarklars/)",
+      "Bash(cp /c/Code/_svelte_temp/.npmrc /c/Code/filipmarklars/)",
+      "Bash(cp -r /c/Code/_svelte_temp/.vscode /c/Code/filipmarklars/)",
+      "Bash(npm install:*)",
+      "Bash(timeout 15 npm run dev)",
+      "Bash(node:*)",
+      "Bash(npm ls:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

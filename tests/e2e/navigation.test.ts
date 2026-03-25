@@ -10,7 +10,8 @@ test('navbar links work', async ({ page }) => {
   await page.goto('/');
   await page.click('a[href="/about"]');
   await expect(page).toHaveURL('/about');
-  await expect(page.locator('h1')).toContainText('About');
+  // About page now uses an italic pull-quote intro instead of an h1
+  await expect(page.locator('p').first()).toContainText("Hey, I'm Filip");
 });
 
 test('projects page shows project cards', async ({ page }) => {

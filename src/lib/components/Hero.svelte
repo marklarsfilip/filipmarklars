@@ -1,9 +1,9 @@
 <script lang="ts">
-  import FloatingOrbs from './FloatingOrbs.svelte';
+  import ParticleCanvas from './ParticleCanvas.svelte';
 </script>
 
 <section class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-  <FloatingOrbs />
+  <ParticleCanvas />
 
   <div class="text-center relative z-10">
     <p

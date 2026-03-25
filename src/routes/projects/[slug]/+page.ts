@@ -5,7 +5,7 @@ import type { Project } from '$lib/types/project';
 export const load: PageLoad = async ({ params }) => {
   const modules = import.meta.glob<{
     default: import('svelte').Component;
-    metadata: Omit<Project, 'slug'>;
+    metadata: Omit<Project, 'slug'> & { slug?: string };
   }>('$lib/content/projects/*.md', { eager: true });
 
   for (const [path, module] of Object.entries(modules)) {

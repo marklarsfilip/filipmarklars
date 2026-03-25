@@ -2,7 +2,7 @@
   import type { Component } from 'svelte';
 
   let { data } = $props();
-  const Content: Component = data.content as Component;
+  const Content: Component = $derived(data.content as Component);
 </script>
 
 <svelte:head>

@@ -9,7 +9,7 @@ export function getFeaturedProjects(projects: Project[], limit = 3): Project[] {
 }
 
 export async function loadProjects(): Promise<Project[]> {
-  const modules = import.meta.glob<{ metadata: Omit<Project, 'slug'> }>(
+  const modules = import.meta.glob<{ metadata: Omit<Project, 'slug'> & { slug?: string } }>(
     '$lib/content/projects/*.md',
     { eager: true }
   );

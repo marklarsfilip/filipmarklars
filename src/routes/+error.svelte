@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Not Found — Filip Marklar</title>
+  <title>Not Found — Filip Marklars</title>
 </svelte:head>
 
 <section class="py-24 px-6 text-center">

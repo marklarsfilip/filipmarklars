@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-  <title>Projects — Filip Marklar</title>
-  <meta name="description" content="Projects by Filip Marklar." />
+  <title>Projects — Filip Marklars</title>
+  <meta name="description" content="Projects by Filip Marklars." />
 </svelte:head>
 
 <section class="py-24 px-6">

@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>{data.project.title} — Filip Marklar</title>
+  <title>{data.project.title} — Filip Marklars</title>
   <meta name="description" content={data.project.description} />
 </svelte:head>
 

@@ -14,7 +14,16 @@
       "Bash(npm ls:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(timeout 30 npm run dev)",
+      "Bash(npx svelte-kit:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx svelte-check:*)",
+      "Bash(npx vite:*)",
+      "Bash(npm run:*)",
+      "Bash(ls:*)",
+      "Bash(find C:/Code/filipmarklars/src -name *.md -o -name *.mdx)",
+      "Bash(npx playwright:*)"
     ]
   }
 }

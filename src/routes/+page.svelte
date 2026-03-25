@@ -6,8 +6,8 @@
 </script>
 
 <svelte:head>
-  <title>Filip Marklar</title>
-  <meta name="description" content="Filip Marklar's personal website — projects, skills, and more." />
+  <title>Filip Marklars</title>
+  <meta name="description" content="Filip Marklars' personal website — projects, skills, and more." />
 </svelte:head>
 
 <Hero />

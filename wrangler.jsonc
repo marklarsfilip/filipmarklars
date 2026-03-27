@@ -1,0 +1,12 @@
+{
+	"routes": [
+		{
+			"pattern": "filipmarklars.com",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.filipmarklars.com",
+			"custom_domain": true
+		}
+	]
+}

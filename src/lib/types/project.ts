@@ -5,6 +5,7 @@ export interface Project {
   tags: string[];
   slug: string;
   thumbnail?: string;
+  thumbnailAlt?: string;
   repo?: string;
   demo?: string;
   featured?: boolean;

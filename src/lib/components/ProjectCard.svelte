@@ -19,8 +19,8 @@
     {#if project.thumbnail}
       <img
         src={project.thumbnail}
-        alt={project.title}
-        class={`w-full ${project.featuredOrder === 1 ? 'h-56' : 'h-40'} object-cover rounded-lg mb-4`}
+        alt={project.thumbnailAlt ?? project.title}
+        class={`w-full ${project.featuredOrder === 1 ? 'h-48 object-top md:h-80' : 'h-40'} object-cover rounded-lg mb-4`}
       />
     {/if}
     <h3 class="font-heading text-lg text-cream group-hover:text-orange transition-colors duration-200 mb-2">

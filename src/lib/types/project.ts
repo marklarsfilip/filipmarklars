@@ -8,4 +8,5 @@ export interface Project {
   repo?: string;
   demo?: string;
   featured?: boolean;
+  featuredOrder?: number;
 }

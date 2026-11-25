@@ -1,7 +1,11 @@
 import type { Project } from '$lib/types/project';
 
 export function sortProjects(projects: Project[]): Project[] {
-  return [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return [...projects].sort((a, b) => {
+    const orderDifference = (a.featuredOrder ?? Number.MAX_SAFE_INTEGER)
+      - (b.featuredOrder ?? Number.MAX_SAFE_INTEGER);
+    return orderDifference || new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 }
 
 export function getFeaturedProjects(projects: Project[], limit = 3): Project[] {

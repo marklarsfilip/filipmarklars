@@ -8,10 +8,11 @@
 
 <a
   href="/projects/{project.slug}"
-  class="group block cursor-pointer
+  class={`group block cursor-pointer
     hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange/5
     transition-all duration-300
-    focus:outline-none focus:ring-2 focus:ring-orange/50 rounded-xl"
+    focus:outline-none focus:ring-2 focus:ring-orange/50 rounded-xl
+    ${project.featuredOrder === 1 ? 'md:col-span-2' : ''}`}
   use:animateOnScroll={{ delay }}
 >
   <SpotlightCard class="p-6 h-full">
@@ -19,7 +20,7 @@
       <img
         src={project.thumbnail}
         alt={project.title}
-        class="w-full h-40 object-cover rounded-lg mb-4"
+        class={`w-full ${project.featuredOrder === 1 ? 'h-56' : 'h-40'} object-cover rounded-lg mb-4`}
       />
     {/if}
     <h3 class="font-heading text-lg text-cream group-hover:text-orange transition-colors duration-200 mb-2">
